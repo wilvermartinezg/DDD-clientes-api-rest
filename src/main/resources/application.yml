@@ -1,0 +1,19 @@
+spring:
+  main:
+    lazy-initialization: true
+  datasource:
+    url: jdbc:postgresql://postgres.wilver.xyz/hexagonal_architecture_customers
+    username: wilvermartinezg
+    password: Wilver123*
+    jpa:
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    hibernate:
+      ddl-auto: update
